@@ -14,6 +14,14 @@
     <module>processor</module>
   </modules>
 
+  <properties>
+    <!-- 原始工程没有在parent指定编译运行的jdk版本，而另一边pizzastore工程指定了1.7，为了调试时两边程序能顺利通过监听绑定，这里也指定1.7 -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Compilation -->
+    <java.version>1.7</java.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
 
   <build>
     <pluginManagement>
