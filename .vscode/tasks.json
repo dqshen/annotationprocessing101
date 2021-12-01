@@ -1,0 +1,15 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // 启动pizzastore工程的mvn compile过程以调试pizzastore依赖的processor
+            "label": "Start mvn install for processor debug",
+            "type": "shell",
+            // mvnDebug以监听方式启动mvn过程，启动后默认监听8000端口，并等待processor的远程调试来访问绑定需要调试的对象
+            "command": "mvnDebug -f factory-sample/pizzastore/pom.xml install",
+            "group": "build"
+        }
+    ]
+}
