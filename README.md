@@ -23,14 +23,14 @@ Annotation Processor机制是用于处理默认配置CLASS的，它能够在java
 # 工程概况说明
 |----factory  
 |       |  
-|       |-----annotation  
-|       |-----processor  
-|       |-----pom.xml(parent)  
+|       └-----annotation  
+|       └-----processor  
+|       └-----pom.xml(parent)  
 |  
 |  
-|----factory-sample  
+└----factory-sample  
         |  
-        |-----pizzastore  
+        └-----pizzastore  
   
   
 本工程共有4个子工程，都是maven工程  
