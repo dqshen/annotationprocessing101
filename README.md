@@ -41,7 +41,7 @@ Annotation Processor机制是用于处理默认配置CLASS的，它能够在java
   
 工程使用(调试)步骤(以VS Code为例)：  
 1.安装annotation、processor两个工程----在factory目录下，执行mvn clean install  
-2.调试状态编译pizzastore工程-----------在pizzastore目录下，执行mvnDebug package命令  
+2.调试状态编译pizzastore工程-----------在pizzastore目录下，执行mvnDebug package命令(如果已经成功执行过，需要先mvn clean一下)  
 执行后命令打印会提示maven启动并暂停，监听端口，等待调试程序介入绑定(attach)，annotation和processor工程已在pizzastore的pom.xml中引入  
 3.调试运行processor-------------------用IDE单独打开processor工程，在主类init函数入口添加断点，使用下面的Debug配置启动远程调试  
         {     
